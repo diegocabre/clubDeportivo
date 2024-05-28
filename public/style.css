@@ -1,0 +1,99 @@
+/* style.css */
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif; /* Fuente predeterminada */
+  background-color: #f8f9fa; /* Color de fondo */
+}
+
+.container {
+  background-color: #ffffff; /* Fondo del contenedor */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); /* Sombra */
+  padding: 20px; /* Espaciado interno */
+}
+
+h1 {
+  color: #007bff; /* Color del título principal */
+}
+
+/* Estilos para el formulario de ingreso de deportes */
+.form-group {
+  margin-bottom: 20px; /* Espaciado inferior entre grupos de formulario */
+}
+
+input[type="text"] {
+  width: 100%; /* Ancho completo del campo de texto */
+  padding: 10px; /* Espaciado interno */
+  border: 1px solid #ced4da; /* Borde del campo de texto */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+input[type="text"]:focus {
+  outline: none; /* Eliminar el contorno en el enfoque */
+  border-color: #007bff; /* Cambiar color del borde en enfoque */
+}
+
+.btn {
+  cursor: pointer; /* Cambiar el cursor al pasar por encima */
+}
+
+.btn-info {
+  background-color: #007bff; /* Color de fondo del botón Agregar */
+  border-color: #007bff; /* Color del borde del botón Agregar */
+  color: #ffffff; /* Color del texto */
+}
+
+.btn-info:hover {
+  background-color: #0056b3; /* Color de fondo del botón Agregar al pasar el ratón */
+  border-color: #0056b3; /* Color del borde del botón Agregar al pasar el ratón */
+}
+
+/* Estilos para la tabla de deportes registrados */
+.table {
+  background-color: #ffffff; /* Fondo de la tabla */
+}
+
+.table th {
+  background-color: #007bff; /* Fondo del encabezado de la tabla */
+  color: #ffffff; /* Color del texto del encabezado de la tabla */
+}
+
+.table td {
+  vertical-align: middle; /* Alinear contenido verticalmente */
+}
+
+/* Estilos para los botones de acción en la tabla */
+.btn-warning,
+.btn-danger {
+  padding: 6px 12px; /* Espaciado interno del botón */
+  margin-right: 5px; /* Margen derecho entre botones */
+}
+
+.btn-warning:hover {
+  background-color: #ffc107; /* Color de fondo del botón Editar al pasar el ratón */
+  border-color: #ffc107; /* Color del borde del botón Editar al pasar el ratón */
+}
+
+.btn-danger:hover {
+  background-color: #dc3545; /* Color de fondo del botón Eliminar al pasar el ratón */
+  border-color: #dc3545; /* Color del borde del botón Eliminar al pasar el ratón */
+}
+
+/* Estilos para las alertas de éxito y error */
+.alert {
+  margin-bottom: 20px; /* Espaciado inferior */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+.alert-success {
+  background-color: #d4edda; /* Color de fondo de la alerta de éxito */
+  border-color: #c3e6cb; /* Color del borde de la alerta de éxito */
+  color: #155724; /* Color del texto de la alerta de éxito */
+}
+
+.alert-danger {
+  background-color: #f8d7da; /* Color de fondo de la alerta de error */
+  border-color: #f5c6cb; /* Color del borde de la alerta de error */
+  color: #721c24; /* Color del texto de la alerta de error */
+}

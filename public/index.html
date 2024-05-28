@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club Deportivo Discipline Spa</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Deportes</h1>
+    <div id="success-alert" class="alert alert-success d-none" role="alert"></div>
+    <div id="error-alert" class="alert alert-danger d-none" role="alert"></div>
+    <div class="border rounded p-4">
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Nombre</label>
+        <div class="col-sm-10">
+          <input id="nombre" type="text" class="form-control" name="nombre" />
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Precio</label>
+        <div class="col-sm-10">
+          <input id="precio" type="text" class="form-control" name="precio" />
+        </div>
+      </div>
+      <button id="btnAgregar" class="btn btn-info">Agregar</button>
+    </div>
+  </div>
+
+  <h5 class="text-center my-4">Tabla de deportes registrados</h5>
+  <table class="table w-25 m-auto border">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Precio</th>
+        <th scope="col">Imagen</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody id="cuerpo"></tbody>
+  </table>
+
+  <!-- Ventana modal de confirmación de eliminación -->
+  <div class="modal fade" id="confirmarEliminacionModal" tabindex="-1" role="dialog"
+    aria-labelledby="confirmarEliminacionModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="confirmarEliminacionModalLabel">Confirmar eliminación</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ¿Está seguro de eliminar este deporte?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+          <button id="confirmarEliminacionBtn" type="button" class="btn btn-danger">Eliminar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="rounded p-4">
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label"
+              aria-placeholder="Futbol, Tenis, Voleibol, Beisbol, Baloncesto, etc">Nombre</label>
+            <div class="col-sm-10">
+              <input id="nombreModal" disabled type="text" class="form-control" name="nombre" />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label" aria-placeholder="15000">Precio</label>
+            <div class="col-sm-10">
+              <input id="precioModal" type="text" class="form-control" name="precio" />
+            </div>
+          </div>
+          <button id="btnEditar" class="btn btn-warning">Editar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

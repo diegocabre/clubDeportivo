@@ -1,0 +1,13 @@
+# Node.js dependencies
+node_modules/
+
+# Archivo de configuración
+config.json
+
+# Archivos de registro
+logs/
+
+# Archivos generados por el entorno de desarrollo
+.env
+
+# Otros archivos y directorios que deseas ignorar
